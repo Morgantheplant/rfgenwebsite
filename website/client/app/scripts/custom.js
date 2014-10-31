@@ -57,4 +57,12 @@ $(function(){
      count = 0;
     }
   });
+
+  // $('[data-toggle="tooltip"]').tooltip({'placement': 'bottom'})
+    
+
+  // $('a').tooltip();
+
+
+
 });
