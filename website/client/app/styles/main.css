@@ -1,3 +1,25 @@
+.circular {
+  height:110px;
+  width:110px;
+  border-radius: 150px;
+  padding:10px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+}
+
+.textDontMove {
+  padding-top:20px;
+  position: absolute;
+}
+
+img {
+  border: 0px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .navbar-right{
   margin-right: 10px;
 }
