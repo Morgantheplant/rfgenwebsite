@@ -36,7 +36,7 @@ var Link = Router.Link;
 var APP = React.createClass({
   render: function(){
     return (
-      <div>
+      <div id="scrollTop">
         <NAV />
         <BANNER />
         <WHY />

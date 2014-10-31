@@ -4,12 +4,9 @@ $(function(){
   	e.preventDefault();
     var clickedElement = "#scroll"+ $(this).attr('data');
     
-   $(clickedElement).animatescroll({scrollSpeed:1500, easing: 'easeInOutQuint'});
+   $(clickedElement).animatescroll({scrollSpeed:1500, easing: 'easeInOutQuint', padding:60});
     
-  });
-
-   
-   
+  });   
 
   var typerCalled = false;
   

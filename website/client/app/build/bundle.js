@@ -37,7 +37,7 @@ var Link = Router.Link;
 var APP = React.createClass({displayName: 'APP',
   render: function(){
     return (
-      React.DOM.div(null, 
+      React.DOM.div({id: "scrollTop"}, 
         NAV(null), 
         BANNER(null), 
         WHY(null), 
@@ -242,8 +242,8 @@ var HOWDO  = React.createClass({displayName: 'HOWDO',
           React.DOM.h1({id: "scrollHowto"}, "HOW DO I USE IT?"), 
           React.DOM.textarea({id: "fakeConsole"}), 
           React.DOM.div({className: "code"}, "npm install slush react-fullstack"), 
-          React.DOM.button({className: "downloadit"}, "Download Here"), 
-          React.DOM.button({className: "forkit"}, "Fork it on GitHUb")
+          React.DOM.button({className: "downloadit btn-primary btn-lg"}, "Download Here"), 
+          React.DOM.button({className: "forkitn btn-primary btn-lg"}, "Fork it on GitHUb")
         )
       )
       )
@@ -275,18 +275,31 @@ var NAV = React.createClass({displayName: 'NAV',
   render: function(){
     return (
         React.DOM.div({className: "contianer"}, 
-        React.DOM.nav({className: "navbar navbar-default", role: "navigation"}, 
-          React.DOM.div({className: "wrapper"}, 
-            Link({className: "navbar-brand", to: "home"}, "React Flux Fullstack Generator"), 
+        React.DOM.nav({className: "navbar navbar-inverse navbar-fixed-top"}, 
+          React.DOM.div({className: "navbar-header"}, 
+            React.DOM.a({className: "navbar-brand", href: "#"}, "REACT FULLSTACK GENERATOR"), 
+            React.DOM.button({type: "button", className: "navbar-toggle", 'data-toggle': "collapse", 'data-target': ".navbar-collapse"}, 
+              React.DOM.span({className: "icon-bar"}), 
+              React.DOM.span({className: "icon-bar"}), 
+              React.DOM.span({className: "icon-bar"})
+            )
+          ), 
+          React.DOM.div({className: "navbar-collapse collapse"}, 
             React.DOM.ul({className: "nav navbar-nav navbar-right"}, 
+              React.DOM.li(null, React.DOM.a({href: "", data: "Top"}, "Home")), 
               React.DOM.li(null, React.DOM.a({href: "", data: "Why"}, "About")), 
               React.DOM.li(null, React.DOM.a({href: "", data: "Howto"}, "How To")), 
               React.DOM.li(null, React.DOM.a({href: "", data: "Team"}, "Team")), 
               React.DOM.li(null, React.DOM.a({href: "", data: "Questions"}, "Questions")), 
               React.DOM.li(null, React.DOM.a({href: "", data: "Blog"}, "Blog"))
+            ), 
+            React.DOM.div({className: "navbar-header navbar-right"}, 
+              React.DOM.p({className: "navbar-text"}
+              )
             )
           )
         )
+        
         )
     );
   }

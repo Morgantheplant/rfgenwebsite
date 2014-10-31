@@ -26,8 +26,8 @@ var HOWDO  = React.createClass({
           <h1 id="scrollHowto">HOW DO I USE IT?</h1>
           <textarea id="fakeConsole"></textarea>
           <div className="code">npm install slush react-fullstack</div>
-          <button className="downloadit">Download Here</button>
-          <button className="forkit">Fork it on GitHUb</button>
+          <button className="downloadit btn-primary btn-lg">Download Here</button>
+          <button className="forkitn btn-primary btn-lg">Fork it on GitHUb</button>
         </div>   
       </div>
       )
