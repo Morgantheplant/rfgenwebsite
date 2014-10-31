@@ -22,7 +22,7 @@ var WHY  = React.createClass({
     return (
       <div>
         <div className="container">
-          <h1 id="scrollWhy">WHY US REACT FULLSTACK?</h1>
+          <h1 id="scrollWhy">WHY USE REACT FULLSTACK?</h1>
           <ul>
             <li>Reason 1</li>
             <li>Reason 2</li>

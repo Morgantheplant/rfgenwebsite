@@ -331,7 +331,7 @@ var WHY  = React.createClass({displayName: 'WHY',
     return (
       React.DOM.div(null, 
         React.DOM.div({className: "container"}, 
-          React.DOM.h1({id: "scrollWhy"}, "WHY US REACT FULLSTACK?"), 
+          React.DOM.h1({id: "scrollWhy"}, "WHY USE REACT FULLSTACK?"), 
           React.DOM.ul(null, 
             React.DOM.li(null, "Reason 1"), 
             React.DOM.li(null, "Reason 2"), 
@@ -408,22 +408,257 @@ var TEAM  = React.createClass({displayName: 'TEAM',
       React.DOM.div(null, 
         React.DOM.div({className: "container"}, 
           React.DOM.h1({id: "scrollTeam"}, "Dev TEAM"), 
-          React.DOM.ul(null, 
-          React.DOM.div({className: "navbar tooltip-demo"}, 
-                  React.DOM.ul({className: "nav"}, 
-                    React.DOM.li(null, React.DOM.a({className: "top", title: "", 'data-placement': "top", 'data-toggle': "tooltip", href: "#", 'data-original-title': "Tooltip on top"}, "Tooltip on top")), 
-                    React.DOM.li(null, React.DOM.a({className: "right", title: "", 'data-placement': "right", 'data-toggle': "tooltip", href: "#", 'data-original-title': "Tooltip on right"}, "Tooltip on right")), 
-                    React.DOM.li(null, React.DOM.a({className: "bottom", title: "", 'data-placement': "bottom", 'data-toggle': "tooltip", href: "#", 'data-original-title': "Tooltip on bottom"}, "Tooltip on bottom")), 
-                    React.DOM.li(null, React.DOM.a({className: "left", title: "", 'data-placement': "left", 'data-toggle': "tooltip", href: "#", 'data-original-title': "Tooltip on left"}, "Tooltip on left"))
+            React.DOM.div({className: "container-fluid"}, 
+              React.DOM.div({className: "row"}, 
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/marcwilhite"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/marc.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Marc"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                  React.DOM.a({href: "http://www.linkedin.com/in/marcwilhite"}, 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
                   )
                 ), 
-          React.DOM.li(null, "Person"), 
-          React.DOM.li(null, "Person"), 
-          React.DOM.li(null, "Person"), 
-          React.DOM.li(null, "Person"), 
-          React.DOM.li(null, "Person"), 
-          React.DOM.li(null, "Person")
-          )
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/richguan"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/rich.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Rich"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.img({className: "circular", src: "app/images/devTeam/teresa.jpg"}), 
+                  React.DOM.a({href: "https://github.com/treelala"}, 
+                    React.DOM.span({className: "textDontMove"}, "Teresa"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/jamesanthonyferguson"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/james.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "James"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/NickStefan"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/nicks.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Nick"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                  React.DOM.a({href: "http://www.linkedin.com/in/nickstefan"}, 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                  )
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/doublelift"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/greg.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Greg"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                )
+              ), 
+
+              React.DOM.div({className: "row"}, 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/bisutun"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/katherine.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Katherine"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                  React.DOM.a({href: "https://www.linkedin.com/in/gilhooley"}, 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                  )
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/concreted"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/aric.png"}), 
+                    React.DOM.span({className: "textDontMove"}, "Aric"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                React.DOM.a({href: "https://github.com/johnheroy"}, 
+                  React.DOM.img({className: "circular", src: "app/images/devTeam/john.png"}), 
+                  React.DOM.span({className: "textDontMove"}, "John"), 
+                  React.DOM.img({src: "app/images/icons/github.png"})
+                ), 
+                React.DOM.a({href: "http://www.linkedin.com/pub/john-heroy/23/274/a54"}, 
+                  React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                )
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/spencer48"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/spencer.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Spencer"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                  React.DOM.a({href: "http://www.linkedin.com/pub/spencer-handley/2b/8/2b1"}, 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                  )
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/xue0chao"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/chao.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Chao"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                  React.DOM.a({href: "http://www.linkedin.com/pub/chao-xue/14/176/9a0"}, 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                  )
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/alezucco"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/ale.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Alejandro"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                )
+              ), 
+
+              React.DOM.div({className: "row"}, 
+
+               React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                 React.DOM.a({href: "https://github.com/fsbatista"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/felipe.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Felipe"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/warrenty"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/warren.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Warren"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                  React.DOM.a({href: "http://www.linkedin.com/pub/warren-tang/1a/a5b/7b9"}, 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                  )
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/bace135"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/bryan.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Bryan"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/morgantheplant"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/morgan.png"}), 
+                    React.DOM.span({className: "textDontMove"}, "Morgan"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                  React.DOM.a({href: "http://www.linkedin.com/in/morganplant"}, 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                  )
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/sebastiandelgado"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/seb.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Sebastian"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                  React.DOM.a({href: "http://www.linkedin.com/pub/sebastian-delgado/38/9b/3a5"}, 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                  )
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/polynickglot"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/nickl.png"}), 
+                    React.DOM.span({className: "textDontMove"}, "Nick"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                )
+              ), 
+
+              React.DOM.div({className: "row"}, 
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/radicalsauce"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/kelly.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Kelly"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                  React.DOM.a({href: "https://www.linkedin.com/in/krhale"}, 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                  )
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/allenjprice"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/allen.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Allen"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                  React.DOM.a({href: "http://www.linkedin.com/pub/allen-price/91/882/583"}, 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                  )
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/adzample"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/adam.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Adam"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/darkstar21"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/mike.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Mike"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/tgrrtt"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/tyler.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Tyler"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                  React.DOM.a({href: "http://www.linkedin.com/pub/tyler-garrett/9a/268/10b"}, 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                  )
+                ), 
+
+                React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 
+                  React.DOM.a({href: "https://github.com/Pouncealot"}, 
+                    React.DOM.img({className: "circular", src: "app/images/devTeam/jasper.jpg"}), 
+                    React.DOM.span({className: "textDontMove"}, "Jasper"), 
+                    React.DOM.img({src: "app/images/icons/github.png"})
+                  ), 
+                    React.DOM.img({src: "app/images/icons/linkedin.gif"})
+                )
+              )
+            )
         )
       )
       )
