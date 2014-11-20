@@ -36,7 +36,6 @@ var NAV = React.createClass({
               <li><a href="" data="Howto">How To</a></li>
               <li><a href="" data="Team">Team</a></li>
               <li><a href="" data="Questions">Questions</a></li>
-              <li><a href="" data="Blog">Blog</a></li>
             </ul>
             <div className="navbar-header navbar-right">
               <p className="navbar-text">

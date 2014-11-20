@@ -240,8 +240,9 @@ var HOWDO  = React.createClass({displayName: 'HOWDO',
       React.DOM.div(null, 
         React.DOM.div({className: "container"}, 
           React.DOM.h1({id: "scrollHowto"}, "HOW DO I USE IT?"), 
+          React.DOM.p(null, "Download it or fork it below. A simple command will get you started!"), React.DOM.br(null), 
           React.DOM.textarea({id: "fakeConsole"}), 
-          React.DOM.div({className: "code"}, "npm install slush react-fullstack"), 
+          React.DOM.br(null), 
           React.DOM.button({className: "downloadit btn-primary btn-lg"}, "Download Here"), 
           React.DOM.button({className: "forkitn btn-primary btn-lg"}, "Fork it on GitHUb")
         )
@@ -290,8 +291,7 @@ var NAV = React.createClass({displayName: 'NAV',
               React.DOM.li(null, React.DOM.a({href: "", data: "Why"}, "About")), 
               React.DOM.li(null, React.DOM.a({href: "", data: "Howto"}, "How To")), 
               React.DOM.li(null, React.DOM.a({href: "", data: "Team"}, "Team")), 
-              React.DOM.li(null, React.DOM.a({href: "", data: "Questions"}, "Questions")), 
-              React.DOM.li(null, React.DOM.a({href: "", data: "Blog"}, "Blog"))
+              React.DOM.li(null, React.DOM.a({href: "", data: "Questions"}, "Questions"))
             ), 
             React.DOM.div({className: "navbar-header navbar-right"}, 
               React.DOM.p({className: "navbar-text"}
@@ -330,15 +330,23 @@ var WHY  = React.createClass({displayName: 'WHY',
   render: function(){
     return (
       React.DOM.div(null, 
-        React.DOM.div({className: "container"}, 
-          React.DOM.h1({id: "scrollWhy"}, "WHY USE REACT FULLSTACK?"), 
-          React.DOM.ul(null, 
-            React.DOM.li(null, "Reason 1"), 
-            React.DOM.li(null, "Reason 2"), 
-            React.DOM.li(null, "Reason 3")
-          ), 
-          React.DOM.h3(null, "Check out all this code!"), 
-          React.DOM.img({src: "./app/src/components/nickcage.jpg"})
+        React.DOM.div({className: "container", id: "scrollWhy"}, 
+         React.DOM.div({className: "container-fluid"}, 
+              React.DOM.div({className: "row"}, 
+                React.DOM.div({className: "col-md-4 col-xs-12"}, 
+                  React.DOM.h2(null, "What this is:"), 
+                    "I think you've let your personal feelings cloud your judgement. Some days you get the bear, and some days the bear gets you. Maybe if we felt any human loss as keenly as we feel one of those close to us, human history would be far less bloody. Travel time to the nearest starbase? Fate. It protects fools, little children, and ships named \"Enterprise.\" Now we know what they mean by 'advanced' tactical training. We know you're dealing in stolen ore. Yes, absolutely, I do indeed concur, wholeheartedly!"
+                ), 
+                React.DOM.div({className: "col-md-4 col-xs-12"}, 
+                  React.DOM.h2(null, "How it works:"), 
+                    "The game's not big enough unless it scares you a little. Your shields were failing, sir. We have a saboteur aboard. It's better than music. It's jazz. What's a knock-out like you doing in a computer-generated gin joint like this?  We know you're dealing in stolen ore. I'm afraid I still don't understand, sir. They were just sucked into space. Now we know what they mean by 'advanced' tactical training. Fear is the true enemy, the only enemy. Mr. Worf, you do remember how to fire phasers?" 
+                ), 
+                React.DOM.div({className: "col-md-4 col-xs-12"}, 
+                  React.DOM.h2(null, "What this is:"), 
+                    "Shields up! Rrrrred alert! You bet I'm agitated! I may be surrounded by insanity, but I am not insane. Earl Grey tea, watercress sandwiches... and Bularian canapés? Are you up for promotion? Mr. Crusher, ready a collision course with the Borg ship. Why don't we just give everybody a promotion and call it a night - 'Commander'? Well, I'll say this for him - he's sure of himself. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know."
+                )
+              )
+          )
         )
       )
       )
@@ -372,8 +380,10 @@ var QUESTIONS  = React.createClass({displayName: 'QUESTIONS',
     return (
       React.DOM.div(null, 
         React.DOM.div({className: "container"}, 
-          React.DOM.h1({id: "scrollQuestions"}, "Questions"), 
-          React.DOM.div(null, React.DOM.a({href: ""}, "Link to Github"))
+          React.DOM.h1({id: "scrollQuestions"}, "QUESTIONS"), 
+          React.DOM.p(null, "No quesitons.. Submit one below!", React.DOM.br(null), React.DOM.br(null), 
+          React.DOM.b(null, "Email:"), "  ", React.DOM.input({type: "text"})), 
+          React.DOM.button({className: "btn-primary"}, "Submit")
         )
       )
       )
@@ -407,7 +417,7 @@ var TEAM  = React.createClass({displayName: 'TEAM',
     return (
       React.DOM.div(null, 
         React.DOM.div({className: "container"}, 
-          React.DOM.h1({id: "scrollTeam"}, "Dev TEAM"), 
+          React.DOM.h1({id: "scrollTeam"}, "DEV TEAM"), 
             React.DOM.div({className: "container-fluid"}, 
               React.DOM.div({className: "row"}, 
                 React.DOM.div({className: "col-md-2 col-sm-4 col-xs-6"}, 

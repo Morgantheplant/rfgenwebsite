@@ -22,8 +22,10 @@ var QUESTIONS  = React.createClass({
     return (
       <div>
         <div className="container">
-          <h1 id="scrollQuestions">Questions</h1>
-          <div><a href="">Link to Github</a></div>
+          <h1 id="scrollQuestions">QUESTIONS</h1>
+          <p>No quesitons.. Submit one below!<br /><br />
+          <b>Email:</b>  <input type="text"></input></p>
+          <button className="btn-primary">Submit</button>
         </div>   
       </div>
       )

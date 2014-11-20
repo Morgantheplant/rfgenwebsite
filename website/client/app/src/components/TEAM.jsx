@@ -22,7 +22,7 @@ var TEAM  = React.createClass({
     return (
       <div>
         <div className="container">
-          <h1 id="scrollTeam">Dev TEAM</h1>
+          <h1 id="scrollTeam">DEV TEAM</h1>
             <div className="container-fluid">
               <div className="row">
                 <div className="col-md-2 col-sm-4 col-xs-6">

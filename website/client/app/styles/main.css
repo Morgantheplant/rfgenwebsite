@@ -1,3 +1,10 @@
+
+
+
+.btn-lg {
+  margin: 10px;
+}
+
 .circular {
   height:110px;
   width:110px;
@@ -22,10 +29,6 @@ a:hover {
 
 .navbar-right{
   margin-right: 10px;
-}
-
-nav>li>a:hover {
-  border-bottom: 2px #D184B7 solid;
 }
 
 
@@ -83,24 +86,33 @@ padding-right: 20px;
 }
 
 #fakeConsole {
-  background-color: black;
+  background-color: #222;
   color:white;
   width:350px;
   height: 40px;
   font-size:14px;
   padding-left: 15px;
   padding-top: 10px;
+  margin-bottom:25px;
 }
 
+#scrollHowto {
+  margin:45px 0px 25px 0px;
+}
+
+#scrollTeam {
+  margin:45px 0px 25px 0px;
+}
 
 body {
+  text-align:center;
   padding-top:50px;
 }
 
 .navbar  {
 /*background-color: #DBDBDB;*/
 box-shadow: 0 8px 8px -8px #232222;
-/*border-color:#DBDBDB;*/
+border-color:#3D3D3D;
 }
 
 @media (max-width: 819px) {
