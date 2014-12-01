@@ -2,9 +2,9 @@
   "name": "react-fullstack-website",
   "version": "0.0.1",
   "description": "A template for fullstack react applications with gulp and browserify",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
-    "start": "node server/app.js",
+    "start": "node server/server.js",
     "test": "gulp test"
   },
   "repository": {
